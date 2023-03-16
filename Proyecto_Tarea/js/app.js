@@ -8,8 +8,6 @@ class Button {
     }
     render(){
         let myContenedor = document.getElementById(this.parentID)
-        console.log(myContenedor);
-        console.log("HOLIS");
         const myButtonHTML = "<button id="+this.id+">"+this.text+"</button>"//test
 
         myContenedor.innerHTML = myButtonHTML; //Aca se va a generar el html del boton
@@ -29,3 +27,18 @@ boton.addEventListener('click', function() {
     }
 	    
 });
+
+class Input {
+    constructor(parentID, type) {
+        this.parentID = parentID;
+        this.type = type;
+    }
+    render(){
+        let input = document.getElementById(this.parentID);
+        const myInputHTML = input.innerHTML + "<input type="+this.type+">";
+        input.innerHTML = myInputHTML;
+    }
+}
+
+let myInput = new Input("fecha","date");
+myInput.render();

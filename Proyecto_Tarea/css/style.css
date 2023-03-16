@@ -5,6 +5,7 @@
 } /*Elegimos letra y ponemos margen y padding 0 a toda la pagina*/
 section {
     display: flex;
+    flex-flow: column nowrap;
     align-items: center;
     justify-content:center;
     height: 100vh;
@@ -49,3 +50,10 @@ section {
     font-weight: bold;
     text-align: center;
 }
+#fecha{
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+}   
