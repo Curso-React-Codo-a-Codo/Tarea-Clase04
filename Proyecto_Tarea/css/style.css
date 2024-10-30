@@ -9,7 +9,7 @@ section {
     align-items: center;
     justify-content:center;
     height: 100vh;
-    background-image: url(/img/BackgroundV2.pngs);
+    background-image: url(../img/BackgroundV2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
